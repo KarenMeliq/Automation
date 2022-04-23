@@ -77,13 +77,26 @@
             display: none;
         }
 
+        #registerBox {
+            border:5px solid #000;
+            padding:15px;
+            width: 600px;
+            position: absolute;
+            left: 50%;
+            margin-left: -300px;
+            top: 15%;
+            background-color:rgb(0, 14, 139);
+            color:white;
+            display: none;
+        }
+
     </style>
 </head>
 <body>
     <nav>
         <h2>
             <span class="login-btn">Login</span> |
-            <span>Register</span> |
+            <span class ="register-btn">Register</span> |
             <span id="filters-nav">Filters</span> |
         </h2>
     </nav>
@@ -130,6 +143,22 @@
         <br>
         <br>
         <button>Login</button>
+    </div>
+
+    <div id = "registerBox">
+        <h2> Register  <span style = "cursor:pointer; float:right" class = "register-btn"> X </span></h2>
+        <p> Name</p>
+        <input type = "text" id = "name">
+        <p> Email</p>
+        <input type = "text" id = "email1"> <span id = "email-message1"> </span>
+        <p> Password</p>
+        <input type = "text">
+        <p> RetypePassword</p>
+        <input type = "text">
+        <br>
+        <br>
+        <button> Sign Up</button>
+
     </div>
 
     <script src="social.js"></script>

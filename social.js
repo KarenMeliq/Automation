@@ -34,6 +34,7 @@ let filtersNav = document.querySelector("#filters-nav");
 let updateFiltersBtn = document.querySelector("#update-filters");
 let loginBtns = document.querySelectorAll(".login-btn");
 let emailInput = document.querySelector("#email");
+let registerBtn = document.querySelectorAll(".register-btn");
 
 
 emailInput.addEventListener("keyup",function(){
@@ -50,6 +51,24 @@ emailInput.addEventListener("keyup",function(){
 
 loginBtns[0].addEventListener("click",openHideLogin);
 loginBtns[1].addEventListener("click",openHideLogin);
+registerBtn[0].addEventListener("click",openHiddenReg);
+registerBtn[1].addEventListener("click",openHiddenReg);
+
+function openHiddenReg()
+{
+
+    let regBox = document.querySelector("#registerBox");
+    if(regBox.style.display === "" || regBox.style.display ==="none")
+    {
+        regBox.style.display = "block";
+    }else {
+        regBox.style.display = "none";
+
+    }
+
+
+}
+
 
 function openHideLogin()
 {
