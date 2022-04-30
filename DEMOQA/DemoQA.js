@@ -94,7 +94,7 @@ tabToOpen.then(function () {
 
      // Step 4 - Finding the password input 
 
-        let promisePasswordBox = tab.findElement(swd.By.css("#password"));
+        /*let promisePasswordBox = tab.findElement(webdriver.By.css("#password"));
 
         return promisePasswordBox;
 
@@ -149,7 +149,7 @@ tabToOpen.then(function () {
 
     .then(function () {
 
-        console.log("Successfully signed in GEEKSFORGEEKS!");
+        console.log("Successfully signed in");
 
     })
 
@@ -157,4 +157,4 @@ tabToOpen.then(function () {
 
         console.log("Error ", err, " occurred!");
 
-    });
+    });*/
